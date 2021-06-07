@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="metContainer">
+        <div class="inputPlusMinus">
+            <span id="minus" class="square"><i class="fas fa-minus"></i></span>
+            <span id="tempoMarker" class="tempoMarker">100</span>
+            <span id="plus" class="square"><i class="fas fa-plus"></i></span>
+        </div>
+        <div class="inputRange">
+            <input value="100" type="range" min="40" max="400" name="range" id="range">
+        </div>
+        <div class="playStop">
+            <div id="playBtn">
+                <i id="playIcon" class="fas fa-play"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="audioElement">
+        <audio id="metSound" src="sounds/Latin_2.wav" preload="auto"></audio>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
